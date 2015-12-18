@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Class 12/12/15</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+// var one = 1;
+// console.log(one.length)
+
+// var two = "two";
+// console.log(two.length)
+
+// var three = true;
+// console.log(three.length)
+
+// var four = {
+// 	name: "Billy",
+// 	number: 69
+// }
+// console.log(four.length)
+
+// var five = [69, "Billy", false];
+// console.log(five.length)
+
+// var array2 = [];
+// function reverse(array) {
+// 	for(i = array.length - 1; i >= 0; i--) {
+// 		array2.push(array[i]);
+// 	}
+// 	console.log(array2)
+// } 
+// reverse(five);
+
+// var array3 = [7, 6, 4]
+// array3.pop();
+// console.log(array3)
+
+// array3.shift();
+// console.log(array3)
+
+// var cat = "cat"
+// console.log(cat.split("").reverse().join(""))
+
+// var stringArray = ["cat", "dog", "dude", "bro"];
+// var anotherArray = [];
+// for(i = 0; i < stringArray.length; i++) {
+// 	anotherArray[i] = stringArray[i].split("").reverse().join("");
+// }
+// console.log(anotherArray)
+
+
+// function pickNumber() {
+// 	var number = Number(prompt("Pick a number from 1 to 10 dude..."));
+// 	var theNumber = 0;
+// 	for(i = 1; i <= number; i++) {
+// 		theNumber = theNumber + i;
+// 	}
+// 	document.write(theNumber)
+// }
+// pickNumber();
+
+// function pOrS() {
+// 	var choose = prompt("Do you want to compute the sum or compute the product? (Enter sum or product)").toLowerCase();
+// 	if(choose === "sum") {
+// 		var number = Number(prompt("Pick a number from 1 to 10 dude..."));
+// 		var theNumber = 0;
+// 		for(i = 1; i <= number; i++) {
+// 			theNumber = theNumber + i;
+// 		}
+// 		document.write(theNumber)
+// 	}
+// 	else if(choose = "product") {
+// 		var number = Number(prompt("Pick a number from 1 to 10 dude..."));
+// 		var theNumber = 1;
+// 		for(i = 1; i <= number; i++) {
+// 			theNumber = theNumber * i;
+// 		}
+// 		document.write(theNumber)
+// 	}
+// 	else {
+// 		alert("Wrong input bro")
+// 	}
+// }
+
+// pOrS();
+
+
+// Function that takes range of random numbers, asks user to guess until he/she gets, and logs the number of tries
+function myNumber() {
+	x = Number(prompt("The range is 1 to....."));
+	var guessNumber = Math.floor((Math.random() * x) + 1);
+	var answer = true;
+	var guesses = 0;
+	while(answer) {
+		var userAnswer = Number(prompt("Guess my NUMBER!!!!!....."));
+		if(userAnswer < guessNumber) {
+			alert("Too low like bro")
+			answer = true;
+			guesses++
+		}
+		else if(userAnswer > guessNumber) {
+			alert("Too High like Pie")
+			answer = true;
+			guesses++
+		}
+		else {
+			alert("YOU GOT IT!!!!!")
+			guesses++
+			console.log("You took " + guesses + " tries to get the right number.")
+			answer = false;
+			return;
+		}
+	}
+}
+
+myNumber();
+
+
+
+</script>
+
+</body>
+</html>
